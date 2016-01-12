@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+  var arrI : [String] = ["malu","malu1"]
+  @IBOutlet var myatb: UITableView!
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -19,6 +20,20 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
+  
+  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    return arrI.count
+  }
+  
+  // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+  // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+  
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+       let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TableViewCell1
+    cell.labelv.text = arrI[indexPath.row]
+    return cell
+  }
+  
 
 
 }

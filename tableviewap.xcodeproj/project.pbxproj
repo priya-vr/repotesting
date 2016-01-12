@@ -12,6 +12,7 @@
 		6F4A1BDE1C44BB7F009E0D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4A1BDC1C44BB7F009E0D69 /* Main.storyboard */; };
 		6F4A1BE01C44BB7F009E0D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4A1BDF1C44BB7F009E0D69 /* Assets.xcassets */; };
 		6F4A1BE31C44BB7F009E0D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4A1BE11C44BB7F009E0D69 /* LaunchScreen.storyboard */; };
+		6FA27F6F1C44C4FA00F06E05 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27F6E1C44C4FA00F06E05 /* TableViewCell1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6F4A1BDF1C44BB7F009E0D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F4A1BE21C44BB7F009E0D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F4A1BE41C44BB7F009E0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA27F6E1C44C4FA00F06E05 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				6F4A1BD81C44BB7F009E0D69 /* AppDelegate.swift */,
 				6F4A1BDA1C44BB7F009E0D69 /* ViewController.swift */,
+				6FA27F6E1C44C4FA00F06E05 /* TableViewCell1.swift */,
 				6F4A1BDC1C44BB7F009E0D69 /* Main.storyboard */,
 				6F4A1BDF1C44BB7F009E0D69 /* Assets.xcassets */,
 				6F4A1BE11C44BB7F009E0D69 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA27F6F1C44C4FA00F06E05 /* TableViewCell1.swift in Sources */,
 				6F4A1BDB1C44BB7F009E0D69 /* ViewController.swift in Sources */,
 				6F4A1BD91C44BB7F009E0D69 /* AppDelegate.swift in Sources */,
 			);
@@ -248,9 +252,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tableviewap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = experion.tableviewap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -259,9 +265,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tableviewap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = experion.tableviewap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -284,6 +292,7 @@
 				6F4A1BE91C44BB7F009E0D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

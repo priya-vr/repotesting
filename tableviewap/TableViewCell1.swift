@@ -10,6 +10,7 @@ import UIKit
 
 class TableViewCell1: UITableViewCell {
 
+  @IBOutlet var labelv: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
