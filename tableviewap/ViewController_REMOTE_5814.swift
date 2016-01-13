@@ -20,9 +20,6 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-<<<<<<< HEAD
-  ///gyytyuyuyuyuy
-=======
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
     return arrI.count
@@ -38,7 +35,6 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
   }
   
 
->>>>>>> develop
 
 }
 
