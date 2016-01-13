@@ -13,6 +13,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
   @IBOutlet var myatb: UITableView!
   override func viewDidLoad() {
     super.viewDidLoad()
+//fwwrfwtwfwtfwfwf
+//sys
+//bshsghhsshsshsjsjhhs
     // Do any additional setup after loading the view, typically from a nib.
   }
 
